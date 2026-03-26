@@ -1,4 +1,4 @@
-import yo from "../../assets/yo.jpeg";
+import yo from "../../../assets/yo.jpeg";
 
 export default function ProfilePhoto({ width, height }) {
 

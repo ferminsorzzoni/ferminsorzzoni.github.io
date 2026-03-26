@@ -1,4 +1,4 @@
-import ProfilePhoto from "../ui/ProfilePhoto";
+import ProfilePhoto from "../ui/ProfilePhoto/ProfilePhoto";
 
 export default function Header() {
     return (
@@ -7,7 +7,7 @@ export default function Header() {
                 <ProfilePhoto />
                 <h1>Fermin Sorzzoni</h1>
             </div>
-            
+
         </header>
     );
 }
