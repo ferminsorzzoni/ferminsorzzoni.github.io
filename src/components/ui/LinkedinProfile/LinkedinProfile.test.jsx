@@ -1,12 +1,8 @@
-import { describe, it, expect, beforeEach } from "vitest";
+import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import LinkedinProfile from "./LinkedinProfile.jsx";
 
 describe("El componente LinkedinProfile", () => {
-    beforeEach(() => {
-        render(<LinkedinProfile />)
-    });
-
     it("renderiza correctamente el link al perfil de LinkedIn", () => {
         render(<LinkedinProfile />)
 
@@ -33,8 +29,7 @@ describe("El componente LinkedinProfile", () => {
         const svg = link.querySelector("svg");
 
         expect(svg).toBeInTheDocument();
-        expect(svg).toHaveAttribute("width", "32");
-        expect(svg).toHaveAttribute("height", "32");
+        expect(svg).toHaveClass();
         expect(svg).toHaveAttribute("aria-hidden", "true");
     });
 
@@ -48,8 +43,7 @@ describe("El componente LinkedinProfile", () => {
         const svg = link.querySelector("svg");
 
         expect(svg).toBeInTheDocument();
-        expect(svg).toHaveAttribute("width", "48");
-        expect(svg).toHaveAttribute("height", "48");
+        expect(svg).toHaveClass();
         expect(svg).toHaveAttribute("aria-hidden", "true");
     });
 

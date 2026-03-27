@@ -1,14 +1,13 @@
 import yo from "../../../assets/yo.jpeg";
+import { iconSizesMap } from "../../../utils/sizes.js";
 
-export default function ProfilePhoto({ width = 32, height = 32 }) {
+export default function ProfilePhoto({ size = "medium" }) {
 
     return (
         <img 
             src={yo} 
             alt=""
-            width={width}
-            height={height}
-            className="rounded-full object-cover"
+            className={iconSizesMap[size] + " rounded-full object-cover"}
         />
     );
 }
