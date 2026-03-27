@@ -1,12 +1,14 @@
 import yo from "../../../assets/yo.jpeg";
 
-export default function ProfilePhoto({ width, height }) {
+export default function ProfilePhoto({ width = 32, height = 32 }) {
 
     return (
         <img 
             src={yo} 
-            alt="" 
-            className={"w-"+ width + " h-" + height + " rounded-full object-cover"}
+            alt=""
+            width={width}
+            height={height}
+            className="rounded-full object-cover"
         />
     );
 }

@@ -1,8 +1,8 @@
 // GitHub SVG by lawnchairlauncher - Collection: Lawnicons Line Brand Icons - License: Apache License
 
-export default function GithubProfile({ width, height }) {
+export default function GithubProfile({ width = 32, height = 32 }) {
     <a href="https://github.com/fsorzzoni" aria-label="Perfil de GitHub">
-        <svg  className={"w-"+ width + " h-" + height + " block"} viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff">
+        <svg  className="block" width={width} height={height} viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
