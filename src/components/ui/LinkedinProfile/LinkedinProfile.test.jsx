@@ -8,6 +8,8 @@ describe("El componente LinkedinProfile", () => {
     });
 
     it("renderiza correctamente el link al perfil de LinkedIn", () => {
+        render(<LinkedinProfile />)
+
         const link = screen.getByRole("link", {
             name: /perfil de linkedin/i,
         });
@@ -21,7 +23,9 @@ describe("El componente LinkedinProfile", () => {
         expect(link).toHaveAttribute("rel", "noopener noreferrer");
     });
 
-    it("renderiza correctamente el SVG de LinkedIn", () => {
+    it("renderiza correctamente el SVG de LinkedIn sin propiedades (32x32)", () => {
+        render(<LinkedinProfile />)
+
         const link = screen.getByRole("link", {
             name: /perfil de linkedin/i,
         });
@@ -31,5 +35,33 @@ describe("El componente LinkedinProfile", () => {
         expect(svg).toBeInTheDocument();
         expect(svg).toHaveAttribute("width", "32");
         expect(svg).toHaveAttribute("height", "32");
+        expect(svg).toHaveAttribute("aria-hidden", "true");
+    });
+
+    it("renderiza correctamente el SVG de LinkedIn con propiedades (48x48)", () => {
+        render(<LinkedinProfile width={48} height={48} />)
+
+        const link = screen.getByRole("link", {
+            name: /perfil de linkedin/i,
+        });
+
+        const svg = link.querySelector("svg");
+
+        expect(svg).toBeInTheDocument();
+        expect(svg).toHaveAttribute("width", "48");
+        expect(svg).toHaveAttribute("height", "48");
+        expect(svg).toHaveAttribute("aria-hidden", "true");
+    });
+
+    it("puede focusear el link", async () => {
+        render(<LinkedinProfile />);
+
+        const link = screen.getByRole("link", {
+            name: /perfil de linkedin/i,
+        });
+
+        link.focus();
+
+        expect(link).toHaveFocus();
     });
 });
