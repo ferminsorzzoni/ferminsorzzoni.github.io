@@ -2,7 +2,7 @@
 
 export default function LinkedinProfile({ width = 32, height = 32 }) {
     return (
-        <a href="https://www.linkedin.com/in/fermin-sorzzoni-2792112b3/" aria-label="Perfil de LinkedIn">
+        <a href="https://www.linkedin.com/in/fermin-sorzzoni-2792112b3/" aria-label="Perfil de LinkedIn" target="_blank" rel="noopener noreferrer">
             <svg className="block" width={width} height={height} viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#e6e6e6">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
