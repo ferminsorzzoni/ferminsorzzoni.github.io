@@ -5,8 +5,10 @@ import { PROJECTS_ICONS } from "../../constants/icons.js";
 import { PROJECTS } from "../../constants/projects";
 import ProjectImg from "../ProjectImg/ProjectImg.jsx";
 
-export default function ProjectCard({ projectId = "unitracker" }) {
-    const { title, description, techDescription, image, githubUrl, liveUrl } = PROJECTS[projectId] ?? PROJECTS.unitracker;
+export default function ProjectCard({ projectId }) {
+    const project = PROJECTS[projectId];
+    if(!project) return null;
+    const { title, description, techDescription, image, githubUrl, liveUrl } = project;
     return (
         <div>
             <ProjectImg imgSrc={image} />
