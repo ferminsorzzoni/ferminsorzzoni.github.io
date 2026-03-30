@@ -1,9 +1,14 @@
+import unitrackerImg from "../../../assets/unitracker.png";
+import portfolioImg from "../../../assets/portfolio.png";
+import ssooImg from "../../../assets/ssoo.png";
+import sejuImg from "../../../assets/seju.png";
+
 export const PROJECTS = {
     unitracker: {
         title: "Unitracker",
         description: "",
         techDescription: "",
-        image: "",
+        image: unitrackerImg,
         githubUrl: "",
         liveUrl: "",
     },
@@ -11,7 +16,7 @@ export const PROJECTS = {
         title: "Portfolio",
         description: "",
         techDescription: "",
-        image: "",
+        image: portfolioImg,
         githubUrl: "",
         liveUrl: "",
     },
@@ -19,7 +24,7 @@ export const PROJECTS = {
         title: "TP Sistemas Operativos",
         description: "",
         techDescription: "",
-        image: "",
+        image: ssooImg,
         githubUrl: "",
         liveUrl: "",
     },
@@ -27,6 +32,6 @@ export const PROJECTS = {
         title: "Inscripciones SeJu",
         description: "",
         techDescription: "",
-        image: "",
+        image: sejuImg,
     }
 }

@@ -1,4 +1,4 @@
-import ProjectsGrid from "../../../features/projects/components/ProjectsGrid.jsx";
+import ProjectsGrid from "../../../features/projects/components/ProjectsGrid/ProjectsGrid.jsx";
 
 export default function Main() {
     return (

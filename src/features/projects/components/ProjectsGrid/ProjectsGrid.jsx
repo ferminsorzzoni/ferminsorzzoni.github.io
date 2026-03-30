@@ -1,4 +1,4 @@
-import ProjectCard from "./ProjectCard.jsx";
+import ProjectCard from "../ProjectCard/ProjectCard.jsx";
 
 export default function ProjectsGrid() {
     return (
