@@ -1,10 +1,8 @@
-function App() {
+import Home from "./pages/Home/Home.jsx"
+
+export default function App() {
 
   return (
-    <>
-      <h1 className="text-3xl font-bold text-blue-950">ya esta todo asheeee</h1>
-    </>
+    <Home />
   )
 }
-
-export default App
