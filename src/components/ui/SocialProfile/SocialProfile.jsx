@@ -17,12 +17,12 @@ const socialMap = {
     },
 };
 
-export default function SocialProfile({ type = "github", size = "medium" }) {
+export default function SocialProfile({ type = "github", size = "medium", ...props }) {
     const sizeClass = iconSizesMap[size] ?? iconSizesMap.medium;
     const { link, label, icon: Icon } = socialMap[type] ?? socialMap.github;
 
     return (
-        <a href={link} aria-label={label} target="_blank" rel="noopener noreferrer">
+        <a href={link} aria-label={label} target="_blank" rel="noopener noreferrer" {...props}>
             <Icon className={sizeClass + " block"} />
         </a>
     );
