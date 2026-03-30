@@ -1,5 +1,3 @@
-// GitHub and LinkedIn SVG by lawnchairlauncher - Collection: Lawnicons Line Brand Icons - License: Apache License
-
 import { ICONS } from "../../../constants/icons.js";
 import { ICON_SIZES } from "../../../constants/sizes.js";
 import { SOCIALS } from "../../../constants/socials.js";

@@ -1,4 +1,7 @@
-import SocialProfile from "../../../../components/ui/SocialProfile/SocialProfile.jsx";
+import ExternalLink from "../../../../components/ui/ExternalLink/ExternalLink.jsx";
+import { ICONS } from "../../../../constants/icons.js";
+import { ICON_SIZES } from "../../../../constants/sizes.js";
+import { PROJECTS_ICONS } from "../../constants/icons.js";
 import { PROJECTS } from "../../constants/projects";
 import ProjectImg from "../ProjectImg/ProjectImg.jsx";
 
@@ -10,8 +13,8 @@ export default function ProjectCard({ projectId = "unitracker" }) {
             <h3>{title}</h3>
             <p>{description}</p>
             <p>{techDescription}</p>
-            <SocialProfile type="github" link={githubUrl} />
-            // redirect to project
+            {liveUrl && <ExternalLink href={liveUrl} text="Ir a la App" icon={PROJECTS_ICONS.redirect} iconClassName={ICON_SIZES.medium} />}
+            {githubUrl && <ExternalLink href={githubUrl} label={"Repositorio de GitHub"} icon={ICONS.github} iconClassName={ICON_SIZES.medium} />}
         </div>
     );
 }

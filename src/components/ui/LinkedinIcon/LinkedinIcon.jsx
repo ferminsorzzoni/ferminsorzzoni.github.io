@@ -1,3 +1,5 @@
+// LinkedIn SVG by lawnchairlauncher - Collection: Lawnicons Line Brand Icons - License: Apache License
+
 export default function LinkedinIcon({ className }) {
     return (
         <svg aria-hidden="true" className={className} viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff">
