@@ -4,9 +4,9 @@ import LinkedinIcon from "./LinkedinIcon.jsx";
 
 describe("El componente LinkedinIcon", () => {
     it("renderiza correctamente el SVG de LinkedIn", () => {
-        render(<LinkedinIcon className="w-8 h-8 block" />)
+        const { container } = render(<LinkedinIcon className="w-8 h-8 block" />)
 
-        const svg = link.querySelector("svg");
+        const svg = container.querySelector("svg");
 
         expect(svg).toBeInTheDocument();
         expect(svg).toHaveClass("w-8", "h-8", "block");
