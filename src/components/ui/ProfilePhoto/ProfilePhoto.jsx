@@ -1,8 +1,8 @@
 import yo from "../../../assets/yo.jpeg";
-import { iconSizesMap } from "../../../utils/sizes.js";
+import { ICON_SIZES } from "../../../constants/sizes.js";
 
 export default function ProfilePhoto({ size = "medium" }) {
-    const sizeClass = iconSizesMap[size] ?? iconSizesMap.medium;
+        const sizeClass = ICON_SIZES[size] ?? ICON_SIZES.medium;
 
     return (
         <img 

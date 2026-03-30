@@ -1,4 +1,4 @@
-export const socialMap = {
+export const SOCIALS = {
     github: { 
         link: "https://github.com/fsorzzoni", 
         label: "Perfil de GitHub",
