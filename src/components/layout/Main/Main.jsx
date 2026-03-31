@@ -1,13 +1,11 @@
+import About from "../../../features/about/components/About/About.jsx";
 import ProjectsGrid from "../../../features/projects/components/ProjectsGrid/ProjectsGrid.jsx";
 
 export default function Main() {
     return (
         <main>
-            
-
-            <section>
-                <ProjectsGrid />
-            </section>
+            <About />
+            <ProjectsGrid />
         </main>
     );
 }

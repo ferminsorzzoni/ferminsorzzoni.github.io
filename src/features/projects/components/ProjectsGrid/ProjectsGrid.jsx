@@ -3,7 +3,7 @@ import ProjectCard from "../ProjectCard/ProjectCard.jsx";
 
 export default function ProjectsGrid() {
     return (
-        <div>
+        <section>
             <h2>Mis proyectos</h2>
             <div className="grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4">
                 <ProjectCard project={PROJECTS.unitracker} />
@@ -11,6 +11,6 @@ export default function ProjectsGrid() {
                 <ProjectCard project={PROJECTS.ssoo} />
                 <ProjectCard project={PROJECTS.seju} />
             </div>
-        </div>
+        </section>
     );
 }
