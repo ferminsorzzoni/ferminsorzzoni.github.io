@@ -1,5 +1,6 @@
 // tailwind.config.js
-module.exports = {
+export default {
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {

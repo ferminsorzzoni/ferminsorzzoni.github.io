@@ -3,7 +3,7 @@ import ProjectsGrid from "../../../features/projects/components/ProjectsGrid/Pro
 
 export default function Main() {
     return (
-        <main>
+        <main className="layout-center my-8">
             <About />
             <ProjectsGrid />
         </main>

@@ -3,9 +3,9 @@ import ProjectCard from "../ProjectCard/ProjectCard.jsx";
 
 export default function ProjectsGrid() {
     return (
-        <section>
-            <h2>Mis proyectos</h2>
-            <div className="grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4">
+        <section className="mt-8">
+            <h2 className="section-header">Mis proyectos</h2>
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-16">
                 <ProjectCard project={PROJECTS.unitracker} />
                 <ProjectCard project={PROJECTS.portfolio} />
                 <ProjectCard project={PROJECTS.ssoo} />

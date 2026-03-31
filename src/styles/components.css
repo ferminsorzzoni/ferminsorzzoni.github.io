@@ -1,0 +1,11 @@
+@layer components {
+    .section-header {
+        @apply text-5xl my-4;
+    }
+    .layout-center {
+        @apply mx-auto max-w-4xl;
+    }
+    .about-me-p {
+        @apply my-2;
+    }
+}
