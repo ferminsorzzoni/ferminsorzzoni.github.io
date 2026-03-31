@@ -2,11 +2,9 @@ import ExternalLink from "../../../../components/ui/ExternalLink/ExternalLink.js
 import { ICONS } from "../../../../constants/icons.js";
 import { ICON_SIZES } from "../../../../constants/sizes.js";
 import { PROJECTS_ICONS } from "../../constants/icons.js";
-import { PROJECTS } from "../../constants/projects";
 import ProjectImg from "../ProjectImg/ProjectImg.jsx";
 
-export default function ProjectCard({ projectId }) {
-    const project = PROJECTS[projectId];
+export default function ProjectCard({ project }) {
     if(!project) return null;
     const { title, description, techDescription, image, githubUrl, liveUrl } = project;
     return (
