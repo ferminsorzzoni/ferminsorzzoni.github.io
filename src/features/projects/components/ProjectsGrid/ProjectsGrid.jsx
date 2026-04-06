@@ -7,10 +7,9 @@ export default function ProjectsGrid() {
             <h2 className="section-header">Mis proyectos</h2>
             <div className="grid grid-cols-1 min-[650px]:grid-cols-2 gap-16">
                 <ProjectCard project={PROJECTS.unitracker} />
-                <ProjectCard project={PROJECTS.seju} />
                 <ProjectCard project={PROJECTS.portfolio} />
+                <ProjectCard project={PROJECTS.seju} />
                 <ProjectCard project={PROJECTS.ssoo} />
-                
             </div>
         </section>
     );
