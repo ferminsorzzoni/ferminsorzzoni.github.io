@@ -3,15 +3,6 @@
         @apply text-5xl my-4 font-medium;
     }
 
-    .layout-center {
-        @apply mx-auto max-w-4xl;
-    }
-    @media (max-width: 1000px) {
-        .layout-center {
-            @apply mx-12;
-        }
-    }
-
     .about-me-p {
         @apply my-2;
     }

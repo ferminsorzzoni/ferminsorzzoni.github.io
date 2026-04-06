@@ -4,7 +4,7 @@ import Main from "../../components/layout/Main/Main.jsx";
 
 export default function Home() {
     return (
-        <div className="layout-center my-16">
+        <div className="mx-auto max-w-4xl px-12 lg:px-0 my-16">
             <Header />
             <Main />
             <Footer />
