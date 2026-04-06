@@ -17,8 +17,8 @@ export const PROJECTS = {
         description: "",
         techDescription: "",
         image: portfolioImg,
-        githubUrl: "",
-        liveUrl: "",
+        githubUrl: "asd",
+        liveUrl: "asd",
     },
     ssoo: {
         title: "TP Sistemas Operativos",
