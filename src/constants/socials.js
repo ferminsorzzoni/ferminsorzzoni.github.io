@@ -5,7 +5,7 @@ export const SOCIALS = {
         icon: "github",
     },
     linkedin: { 
-        link: "https://www.linkedin.com/in/fermin-sorzzoni-2792112b3/", 
+        link: "https://www.linkedin.com/in/ferminsorzzoni/", 
         label: "Perfil de LinkedIn",
         icon: "linkedin",
     },
