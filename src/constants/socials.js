@@ -1,6 +1,6 @@
 export const SOCIALS = {
     github: { 
-        link: "https://github.com/fsorzzoni", 
+        link: "https://github.com/ferminsorzzoni", 
         label: "Perfil de GitHub",
         icon: "github",
     },
